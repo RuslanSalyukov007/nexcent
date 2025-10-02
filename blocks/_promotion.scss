@@ -1,0 +1,43 @@
+.promotion {
+    background: var(--neutral-silver);
+    padding: 32px 0;
+}
+.promotion__title {
+    max-width: 887px;
+    margin: auto;
+
+    margin-bottom: 32px;
+
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: clamp(1.563rem, 0.676rem + 4.43vw, 4rem);
+    line-height: 119%;
+    text-align: center;
+    color: var(--neutral-black);
+}
+.promotion__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    width: 178px;
+    height: auto;
+    margin: auto;
+
+    border-radius: 4px;
+    padding: 14px 32px;
+    
+    background-color: var(--brand-primary);
+
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: var(--neutral-white);
+    
+    &:hover {
+        background-color: rgba(76, 175, 79, 0.7);
+    }
+}

@@ -1,0 +1,32 @@
+// fonts 
+
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+
+
+// Base
+
+@import './../base/base';
+@import './../base/reset';
+@import './../base/vars';
+
+
+// Blocks
+
+@import './../blocks/header';
+@import './../blocks/nav';
+@import './../blocks/links';
+@import './../blocks/hero';
+@import './../blocks/clients';
+@import './../blocks/community';
+@import './../blocks/unlock';
+@import './../blocks/achievements';
+@import './../blocks/calendar';
+@import './../blocks/customers';
+@import './../blocks/community-updates';
+@import './../blocks/promotion';
+@import './../blocks/footer';
+@import './../blocks/mobile-nav';
+@import './../blocks/swiper';
+

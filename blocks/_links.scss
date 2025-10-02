@@ -1,0 +1,47 @@
+.account {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+
+    @media (max-width: 767px) {
+        display: none;
+    }
+}
+.login {
+    border-radius: 6px;
+    padding: 10px 20px;
+    width: 77px;
+    height: 40px;
+
+    // background: var(--neutral-silver);
+
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 143%;
+    text-align: center;
+    color: var(--brand-primary);
+
+    transition: all 0.2s ease-in;
+    &:hover {
+        transform: translateY(10px);
+    }
+}
+.sign-up {
+    border-radius: 6px;
+    padding: 10px 20px;
+    
+    background: var(--brand-primary);
+
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 143%;
+    text-align: center;
+    color: var(--neutral-white);
+
+    transition: all 0.2s ease-in;
+    &:hover {
+        transform: translateY(10px);
+    }
+}

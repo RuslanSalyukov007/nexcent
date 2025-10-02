@@ -1,0 +1,113 @@
+.clients {
+    padding: 40px 0;
+}
+.clients__title {
+    margin-bottom: 8px;
+    
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: clamp(1.563rem, 1.313rem + 1.25vw, 2.25rem);
+    line-height: 122%;
+    text-align: center;
+    color: var(--neutral-d-grey);
+}
+.clients__text {
+    margin-bottom: 16px;
+
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: var(--neutral-grey);
+}
+// .clients__logos {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+    
+//     gap: 136px;
+
+//     img {
+//         display: block;
+//         padding: 25px 0;
+
+//         transition: all 0.2s ease-in;
+//         &:hover {
+//             transform: translateY(15px);
+//         }
+//     }
+
+//     @media (max-width: 1260px) {
+//         flex-wrap: wrap;
+//         gap: clamp(1.875rem, -0.534rem + 12.05vw, 8.5rem);
+//         row-gap: 10px;
+//     }
+    
+// }   
+
+.clients__logos {
+    display: flex;
+    gap: 136px;
+
+    padding: 25px 0;
+    overflow: hidden;
+
+
+    position: relative;
+
+    &::before, &::after {
+        display: block;
+        content: "";
+        position: absolute;
+        z-index: 1;
+        top:0;
+        
+
+        width: 50px;
+        height: 250px;
+        
+    }
+    &::before {
+        left: 0;
+        background: linear-gradient(to left,rgba(255, 255, 255, 0.05), white)
+    }
+
+    &::after {
+        right: 0;
+        background: linear-gradient(to right,rgba(255, 255, 255, 0.05), white)
+    }
+
+    @media (max-width: 425px) {
+        gap: 70px;
+    }
+
+    
+}
+.clients__logos li {
+    display: flex;
+    align-items: center;
+    gap: 136px;
+
+    @media (max-width: 425px) {
+        gap: 70px;
+    }
+}
+.clients__logos ul {
+    flex-shrink: 0;
+    animation: scroll 20s linear infinite;
+}
+
+.clients__logos:hover ul {
+    animation-play-state: paused;
+}
+
+@keyframes scroll {
+  to {
+    transform: translateX(calc(-100% - 136px));
+
+    @media (max-width: 425px) {
+        transform: translateX(calc(-100% - 70px));
+    }
+  }
+}
